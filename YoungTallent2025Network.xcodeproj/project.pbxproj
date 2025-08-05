@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B8BEA28E2E41F59F006639F9 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = B8BEA28D2E41F59F006639F9 /* API */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B8BEA2622E41F354006639F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		B8BEA2532E41F352006639F9 /* YoungTallent2025Network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoungTallent2025Network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BEA2612E41F354006639F9 /* YoungTallent2025NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTallent2025NetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BEA26B2E41F354006639F9 /* YoungTallent2025NetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTallent2025NetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BEA28B2E41F418006639F9 /* API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = API; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BEA28E2E41F59F006639F9 /* API in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +81,11 @@
 		B8BEA24A2E41F352006639F9 = {
 			isa = PBXGroup;
 			children = (
+				B8BEA28B2E41F418006639F9 /* API */,
 				B8BEA2552E41F352006639F9 /* YoungTallent2025Network */,
 				B8BEA2642E41F354006639F9 /* YoungTallent2025NetworkTests */,
 				B8BEA26E2E41F354006639F9 /* YoungTallent2025NetworkUITests */,
+				B8BEA28C2E41F59F006639F9 /* Frameworks */,
 				B8BEA2542E41F352006639F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				B8BEA26B2E41F354006639F9 /* YoungTallent2025NetworkUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B8BEA28C2E41F59F006639F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,7 @@
 			);
 			name = YoungTallent2025Network;
 			packageProductDependencies = (
+				B8BEA28D2E41F59F006639F9 /* API */,
 			);
 			productName = YoungTallent2025Network;
 			productReference = B8BEA2532E41F352006639F9 /* YoungTallent2025Network.app */;
@@ -593,6 +609,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8BEA28D2E41F59F006639F9 /* API */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = API;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8BEA24B2E41F352006639F9 /* Project object */;
 }

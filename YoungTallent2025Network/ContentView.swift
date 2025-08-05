@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import API
 
 struct ContentView: View {
     var body: some View {
@@ -16,6 +17,10 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .task {
+//            let req = URLRequest(url: URL(string: "https://www.google.com")!)
+//            await Network().fetch(request: req)
+        }
     }
 }
 
