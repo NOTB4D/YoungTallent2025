@@ -1,0 +1,13 @@
+//
+//  Prod.xcconfig
+//  YoungTallent2025Network
+//
+//  Created by Eser Kucuker on 5.08.2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+
+BASE_URL = https:\/\/api.themoviedb.org/
+BACKEND_URL = $(BASE_URL)3\/movie
