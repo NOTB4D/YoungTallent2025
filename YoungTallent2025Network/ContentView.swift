@@ -18,8 +18,17 @@ struct ContentView: View {
         }
         .padding()
         .task {
-//            let req = URLRequest(url: URL(string: "https://www.google.com")!)
-//            await Network().fetch(request: req)
+            await getData()
+        }
+    }
+    
+    
+    @MainActor func getData() async {
+        do {
+            let response: [MovieResponse] = try await API.Movie.getMovie.fetch()
+            print(response)
+        } catch {
+            print(error)
         }
     }
 }
