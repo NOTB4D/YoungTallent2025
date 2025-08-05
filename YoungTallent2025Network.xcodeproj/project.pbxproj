@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B8BEA28E2E41F59F006639F9 /* API in Frameworks */ = {isa = PBXBuildFile; productRef = B8BEA28D2E41F59F006639F9 /* API */; };
+		B8BEA2902E41FC38006639F9 /* Develop.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */; };
+		B8BEA2922E41FC46006639F9 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B8BEA2912E41FC46006639F9 /* Prod.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,11 +34,26 @@
 		B8BEA2612E41F354006639F9 /* YoungTallent2025NetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTallent2025NetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BEA26B2E41F354006639F9 /* YoungTallent2025NetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YoungTallent2025NetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8BEA28B2E41F418006639F9 /* API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = API; sourceTree = "<group>"; };
+		B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
+		B8BEA2912E41FC46006639F9 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B8BEA2942E41FCDF006639F9 /* Exceptions for "YoungTallent2025Network" folder in "YoungTallent2025Network" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B8BEA2522E41F352006639F9 /* YoungTallent2025Network */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B8BEA2552E41F352006639F9 /* YoungTallent2025Network */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B8BEA2942E41FCDF006639F9 /* Exceptions for "YoungTallent2025Network" folder in "YoungTallent2025Network" target */,
+			);
 			path = YoungTallent2025Network;
 			sourceTree = "<group>";
 		};
@@ -81,6 +98,8 @@
 		B8BEA24A2E41F352006639F9 = {
 			isa = PBXGroup;
 			children = (
+				B8BEA2912E41FC46006639F9 /* Prod.xcconfig */,
+				B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */,
 				B8BEA28B2E41F418006639F9 /* API */,
 				B8BEA2552E41F352006639F9 /* YoungTallent2025Network */,
 				B8BEA2642E41F354006639F9 /* YoungTallent2025NetworkTests */,
@@ -228,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BEA2902E41FC38006639F9 /* Develop.xcconfig in Resources */,
+				B8BEA2922E41FC46006639F9 /* Prod.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +308,7 @@
 /* Begin XCBuildConfiguration section */
 		B8BEA2732E41F354006639F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -349,6 +371,7 @@
 		};
 		B8BEA2742E41F354006639F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA2912E41FC46006639F9 /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -403,6 +426,7 @@
 		};
 		B8BEA2762E41F354006639F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -413,6 +437,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoungTallent2025Network/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -442,6 +467,7 @@
 		};
 		B8BEA2772E41F354006639F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA2912E41FC46006639F9 /* Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +478,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoungTallent2025Network/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,6 +508,7 @@
 		};
 		B8BEA2792E41F354006639F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +532,7 @@
 		};
 		B8BEA27A2E41F354006639F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA2912E41FC46006639F9 /* Prod.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +556,7 @@
 		};
 		B8BEA27C2E41F354006639F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA28F2E41FC38006639F9 /* Develop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -549,6 +579,7 @@
 		};
 		B8BEA27D2E41F354006639F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BEA2912E41FC46006639F9 /* Prod.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
